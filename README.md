@@ -24,21 +24,27 @@ Basic ecommerce micro services
 ## Services and hoe to use them:
 1. Users Service (Public):
 	- GET|POST /users
-	- POST /users/create							Post Payload sample: {"name":"Hello", "mobile":9000000001, "address":"Bell Homes"}
+	- POST /users/create
+		-- Post Payload sample: {"name":"Hello", "mobile":9000000001, "address":"Bell Homes"}
 	- GET|POST /users/{id}
-	- POST /users/{id}/update						Post Payload sample: {"name":"Hello", "mobile":9000000001, "address":"Bell Homes"}
+	- POST /users/{id}/update
+		-- Post Payload sample: {"name":"Hello", "mobile":9000000001, "address":"Bell Homes"}
 	- GET|POST /users/{id}/delete
 	- GET|POST /users/{id}/orders
 	- GET|POST /users/{id}/orders/{order_id}
-	- POST /users/{id}/orders/{order_id}/create		Post Payload sample: {"order_details":"5 pcs, Galaxy A21", "value":29999}
-	- POST /users/{id}/orders/{order_id}/update		Post Payload sample: {"order_details":"5 pcs, Galaxy A21", "value":29999}
+	- POST /users/{id}/orders/{order_id}/create
+		-- Post Payload sample: {"order_details":"5 pcs, Galaxy A21", "value":29999}
+	- POST /users/{id}/orders/{order_id}/update
+		-- Post Payload sample: {"order_details":"5 pcs, Galaxy A21", "value":29999}
 	- GET|POST /users/{id}/orders/{order_id}/delete
 	- GET|POST /users/{id}/delete/orders
 
 2. Orders Service (Private):
 	- GET|POST /users/{id}/orders
 	- GET|POST /users/{id}/orders/{order_id}
-	- POST /users/{id}/orders/{order_id}/create		Post Payload sample: {"order_details":"5 pcs, Galaxy A21", "value":29999}
-	- POST /users/{id}/orders/{order_id}/update		Post Payload sample: {"order_details":"5 pcs, Galaxy A21", "value":29999}
+	- POST /users/{id}/orders/{order_id}/create
+		-- Post Payload sample: {"order_details":"5 pcs, Galaxy A21", "value":29999}
+	- POST /users/{id}/orders/{order_id}/update
+		-- Post Payload sample: {"order_details":"5 pcs, Galaxy A21", "value":29999}
 	- GET|POST /users/{id}/orders/{order_id}/delete
 	- GET|POST /users/{id}/delete/orders
