@@ -18,7 +18,7 @@ Basic ecommerce micro services
 
 ## Database Schema:
 1. Users Table: Users(id number, name varchar, mobile number, address varchar, PRIMARY KEY (id))
-2. Orders Table: Orders(order_id number, fk_user_id number, details varchar, value number, PRIMARY KEY (order_id), FOREIGN KEY (fk_user_id) REFERENCES Orders(id))
+2. Orders Table: Orders(order_id number, fk_user_id number, details varchar, value number, PRIMARY KEY (order_id), FOREIGN KEY (fk_user_id) REFERENCES Users(id))
 
 
 ## Services and hoe to use them:
